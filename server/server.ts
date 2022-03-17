@@ -1,5 +1,6 @@
 import express, { Application, Request, Response } from "express";
-const userController =  require("../controllers/user-controller");
+import { userRouter } from "../routers";
+
 const config = require("config");
 
 const app: Application = express();
@@ -7,7 +8,7 @@ const app: Application = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/", userController);
+app.use("/", userRouter);
 
 const port = config.get("server.port");
 app.listen(port, () => {

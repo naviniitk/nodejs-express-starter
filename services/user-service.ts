@@ -3,7 +3,7 @@ const helloFunction = async () => {
 };
 
 const otherHelloFuncion = async () => {
-  return "New Hello to You";
+  return "New Hello to You!";
 };
 
 export { helloFunction, otherHelloFuncion };
