@@ -5,6 +5,7 @@
   "main": "./server/server.ts",
   "scripts": {
     "serve": "nodemon",
+    "prettier": "prettier --write \"./**/*.{ts,tsx,json}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
