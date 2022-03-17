@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-express-starter",
+  "version": "0.0.1",
+  "description": "This is the starter app for nodejs and express with typescript, this can be used as base code for creating backend applications",
+  "main": "./server/server.ts",
+  "scripts": {
+    "serve": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/naviniitk/nodejs-express-starter.git"
+  },
+  "author": "Naveen Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naviniitk/nodejs-express-starter/issues"
+  },
+  "homepage": "https://github.com/naviniitk/nodejs-express-starter#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
