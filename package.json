@@ -1,6 +1,6 @@
 {
   "name": "nodejs-express-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is the starter app for nodejs and express with typescript, this can be used as base code for creating backend applications",
   "main": "./server/server.ts",
   "scripts": {
