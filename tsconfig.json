@@ -3,7 +3,21 @@
     "target": "es2016",
     "module": "commonjs",
     "esModuleInterop": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@controllers": ["src/controllers/index"],
+      "@helpers": ["src/helpers/index"],
+      "@middelewares": ["src/middlewares/index"],
+      "@models": ["src/models/index"],
+      "@routers": ["src/routers/index"],
+      "@services": ["src/services/index"]
+    }
+  },
+  "include": ["./src/**/*.ts"]
 }
