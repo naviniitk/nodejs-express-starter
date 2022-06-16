@@ -10,7 +10,7 @@ const CONFIG_DIR = "config";
 
 const BUILD_TASKS = ["compile", "copy_locales"];
 
-const args = process.argv
+const args = process.argv;
 
 gulp.task("compile", () => {
   return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest("dist"));
