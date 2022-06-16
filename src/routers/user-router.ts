@@ -1,9 +1,11 @@
-import express, { NextFunction, Request, Response } from "express";
-import { userController } from "../controllers";
+import express from "express";
+import { accountController, userController } from "../controllers";
 
 const router = express.Router();
 
 router.get("/", userController.helloFunc);
+
+router.post("/signup", accountController.signup);
 
 router.get("/other", userController.otherHelloFunc);
 
